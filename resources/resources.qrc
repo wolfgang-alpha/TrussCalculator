@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>bearingicon.png</file>
+        <file>labelicon.png</file>
+        <file>nodeicon.png</file>
+        <file>rodicon.png</file>
+        <file>singleforceicon.png</file>
+        <file>windowtitleicon.png</file>
+        <file>dimensionicon.png</file>
+        <file>rodcolorscale.png</file>
+    </qresource>
+</RCC>

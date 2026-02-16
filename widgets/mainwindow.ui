@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="GraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_Print"/>
+    <addaction name="separator"/>
+    <addaction name="action_Close"/>
+   </widget>
+   <widget class="QMenu" name="menuInfo">
+    <property name="title">
+     <string>Info</string>
+    </property>
+    <addaction name="action_About"/>
+   </widget>
+   <widget class="QMenu" name="menuOptionen">
+    <property name="title">
+     <string>Optionen</string>
+    </property>
+    <addaction name="action_Settings"/>
+    <addaction name="actionDefineEAIglobal"/>
+    <addaction name="separator"/>
+    <addaction name="action_drawDeformedSystem"/>
+    <addaction name="action_colorRods"/>
+    <addaction name="action_markZeroLoadingRods"/>
+    <addaction name="separator"/>
+    <addaction name="action_ShowNodeNumbers"/>
+    <addaction name="action_ShowRodNumbers"/>
+    <addaction name="separator"/>
+    <addaction name="action_ShowSystemDefinition"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuOptionen"/>
+   <addaction name="menuInfo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_New">
+   <property name="text">
+    <string>Neu (Ctrl+N)</string>
+   </property>
+   <property name="toolTip">
+    <string>Neues Fachwerk</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="text">
+    <string>Öffnen (Ctrl+O)</string>
+   </property>
+   <property name="toolTip">
+    <string>Fachwerkdatei öffnen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="text">
+    <string>Speichern (Ctrl+S)</string>
+   </property>
+   <property name="toolTip">
+    <string>geöffnetes Fachwerk speichern</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_SaveAs">
+   <property name="text">
+    <string>Speichern unter</string>
+   </property>
+   <property name="toolTip">
+    <string>geöffnetes Fachwerk als neue Datei speichern</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="text">
+    <string>Schließen (Alt+F4)</string>
+   </property>
+   <property name="toolTip">
+    <string>beendet den Fachwerkrechner</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>Über</string>
+   </property>
+   <property name="toolTip">
+    <string>Informationen über den Fachwerkrechner</string>
+   </property>
+  </action>
+  <action name="action_Settings">
+   <property name="text">
+    <string>Einstellungen</string>
+   </property>
+   <property name="toolTip">
+    <string>Einstellungen des Fachwerkrechners bearbeiten</string>
+   </property>
+  </action>
+  <action name="action_colorRods">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Stäbe einfärben</string>
+   </property>
+   <property name="toolTip">
+    <string>Stäbe anhand ihrer Stabkraft farbskalieren</string>
+   </property>
+  </action>
+  <action name="action_markZeroLoadingRods">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Nullstäbe markieren</string>
+   </property>
+   <property name="toolTip">
+    <string>markiert die Nullstäbe des Systems</string>
+   </property>
+  </action>
+  <action name="action_ShowSystemDefinition">
+   <property name="text">
+    <string>Systemdefinition anzeigen</string>
+   </property>
+   <property name="toolTip">
+    <string>listet alle Elemente des Systems auf</string>
+   </property>
+  </action>
+  <action name="action_ShowRodNumbers">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Stabnummerierung anzeigen</string>
+   </property>
+   <property name="toolTip">
+    <string>zeigt die Stabnummern an</string>
+   </property>
+  </action>
+  <action name="action_ShowNodeNumbers">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Knotennummerierung anzeigen</string>
+   </property>
+   <property name="toolTip">
+    <string>zeigt die Knotennummerierung an</string>
+   </property>
+  </action>
+  <action name="action_Print">
+   <property name="text">
+    <string>Drucken (Ctrl+P)</string>
+   </property>
+   <property name="toolTip">
+    <string>das System drucken oder als PDF-Dokument exportieren</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_drawDeformedSystem">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Deformiertes System zeichnen</string>
+   </property>
+  </action>
+  <action name="actionDefineEAIglobal">
+   <property name="text">
+    <string>Definiere E, A, I global</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>widgets/graphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

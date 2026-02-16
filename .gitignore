@@ -1,0 +1,20 @@
+# Build artifacts
+builds/
+*.o
+*.obj
+moc_*
+ui_*.h
+qrc_*.cpp
+*.qmake.stash
+Makefile
+
+# Qt Creator user files
+*.pro.user
+*.pro.user.*
+
+# Autosave files
+*.autosave
+
+# Binary
+TrussCalculator
+TrussCalculator.exe
