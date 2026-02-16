@@ -4,7 +4,7 @@ A 2D truss structure analysis application built with C++ and Qt. It provides an 
 
 ## Author
 
-Written entirely by [bernhard1536](https://github.com/bernhard1536), originally developed around 2018-2019.
+Written by [bernhard1536](https://github.com/bernhard1536), originally developed around 2018-2019.
 
 ## Features
 
