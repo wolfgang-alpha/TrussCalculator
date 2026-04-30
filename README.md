@@ -2,9 +2,13 @@
 
 A 2D truss structure analysis application built with C++ and Qt. It provides an interactive graphical interface for defining truss systems (nodes, rods, bearings, forces) and solves them using the Finite Element Method (FEM) with the Eigen linear algebra library.
 
-## Author
+## Authors & Acknowledgments
 
-Written by [bernhard1536](https://github.com/bernhard1536), originally developed around 2018-2019.
+The application code was written by [bernhard1536](https://github.com/bernhard1536) around 2018-2019, while he was an employee at the [Chair of Mechanics, Montanuniversität Leoben](https://www.unileoben.ac.at/universitaet/departments-und-lehrstuehle/physik-mechanik-und-elektrotechnik/lehrstuhl-fuer-mechanik/).
+
+The mathematical derivations underlying the FEM logic were contributed by [wolfgang-alpha](https://github.com/wolfgang-alpha).
+
+The project was supervised by **Prof. Thomas Antretter**, whose vision shaped its direction.
 
 ## Features
 
