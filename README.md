@@ -88,4 +88,12 @@ mingw32-make -j%NUMBER_OF_PROCESSORS%
 
 ## License
 
-See the Eigen library license files in `libs/Eigen/` for Eigen's licensing (MPL2 / BSD / LGPL).
+TrussCalculator is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License v3** (or, at your option, any later version) as published by the Free Software Foundation. See the [`LICENSE`](LICENSE) file for the full license text.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+Copyright (C) 2018-2019 [bernhard1536](https://github.com/bernhard1536).
+
+### Third-party components
+
+The bundled [Eigen](https://eigen.tuxfamily.org/) library in `libs/Eigen/` is distributed under its own terms (primarily MPL2, with some files under BSD or LGPL). See the license files inside `libs/Eigen/` for details.
